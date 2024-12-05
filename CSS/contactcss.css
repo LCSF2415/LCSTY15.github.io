@@ -1,0 +1,220 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e4d2; /* Coffee cream background */
+    color: #4b382a; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: #8b4513; /* Rich dark brown */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #c2a779; /* Light golden brown */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: right;
+}
+
+
+nav ul a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #4b382a; /* Dark brown for text */
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: "Francois One", sans-serif;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+nav ul a:hover {
+    color: #ffffff; /* White text on hover */
+}
+
+
+/* Main Section */
+main {
+    display: block;
+    background-color: #ffffff; /* Clean white background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #c2a779; /* Subtle golden border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main h1 {
+    color: #8b4513; /* Rich dark brown */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+main h2, h4, a {
+    color:#000000; /* White text for the email link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make the link stand out */
+}
+main h2:hover{
+    color: #c2a779; /* Accent color for hover effect */
+    text-decoration: underline;
+}
+main h4:hover{
+    color: #c2a779; /* Accent color for hover effect */
+    text-decoration: underline;
+}
+main p {
+    margin: 10px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    font-size: 1.1em;
+}
+li::before {
+    content: "☕"; /* Coffee cup icon before list items */
+    color: #8b4513;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4b382a; /* Dark chocolate brown */
+    color: #ffffff; /* White text */
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+footer a {
+    color: #ffffff; /* White text for the email link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make the link stand out */
+}
+
+footer a:hover {
+    color: #c2a779; /* Accent color for hover effect */
+    text-decoration: underline; /* Optional: underline on hover for emphasis */
+}
+
+/* Adjust font size for smaller text in footer */
+footer p {
+    margin: 5px 0;
+}
+
+/* Images */
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Additional Customizations */
+h2 {
+    color: #c2a779; /* Accent color for subheadings */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Map Styling */
+iframe {
+    border-radius: 10px;
+    border-color: #4b382a;
+    border-width: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding subtle shadow */
+    max-width: 100%;
+    width: 80%;
+    height: 550px; /* Height for the map */
+    margin: 20px 0; /* Margin for spacing */
+}
+/* Form Styles */
+form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: stretch;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #4b382a; /* Dark brown for contrast */
+}
+
+form input, form select, form textarea {
+    padding: 5px;
+    font-size: 1em;
+    border: 2px solid #c2a779; /* Light golden border */
+    border-radius: 5px;
+    background-color: #fff; /* White background for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth border transition */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #8b4513; /* Dark brown on focus */
+    box-shadow: 0 0 8px rgba(139, 69, 19, 0.5); /* Subtle shadow on focus */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form .btn {
+    background-color: #8b4513; /* Rich brown */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .btn:hover {
+    background-color: #c2a779; /* Lighter golden brown on hover */
+}
+/* Border effects for the form */
+form input:hover, form select:hover, form textarea:hover {
+    border-color: #8b4513; /* Dark brown on hover */
+    background-color: #faf0e6; /* Light coffee background on hover */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #8b4513; /* Dark brown border when focused */
+    box-shadow: 0 0 8px rgba(139, 69, 19, 0.5); /* Subtle focus effect */
+}

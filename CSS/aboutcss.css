@@ -1,0 +1,194 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e4d2; /* Coffee cream background */
+    color: #4b382a; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Images */
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+/* Header Section */
+header {
+    background-color: #8b4513; /* Rich dark brown */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #c2a779; /* Light golden brown */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-toggle-label {
+    display: none;
+    font-size: 2em;
+    color: #4b382a;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #4b382a; /* Dark brown for text */
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: "Francois One", sans-serif;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul a:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #8b4513; /* Dark brown background on hover */
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    background-color: #ffffff; /* Clean white background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #c2a779; /* Subtle golden border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main h1 {
+    color: #8b4513; /* Rich dark brown */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin: 10px auto;
+    text-align: left;
+    font-size: 1em;
+    max-width: 800px;
+}
+
+main ul{
+    padding-left: 20%;
+    
+}
+main ul::before {
+    color: #8b4513;
+}
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+li::before {
+    color: #8b4513;
+    margin-right: 8px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4b382a; /* Dark chocolate brown */
+    color: #ffffff; /* White text */
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #ffffff; /* White text for the email link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #c2a779; /* Accent color for hover effect */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Mobile (default) */
+@media (max-width: 768px) {
+    .menu-toggle-label {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #menu-toggle:checked + ul {
+        display: flex;
+    }
+
+    nav ul a {
+        font-weight: bold;
+        font-size: 1.25em;
+        font-family: "Francois One", sans-serif;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 86%;
+    }
+    nav ul a {
+        font-weight: bold;
+        font-size: 1.25em;
+        font-family: "Francois One", sans-serif;
+    }
+}
