@@ -25,13 +25,6 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header img{
-    display: "";
-    max-width: 50%;
-    height: auto;
-    border-radius: 5px;
-}
-
 /* Navigation Bar */
 nav {
     background-color: #c2a779; /* Light golden brown */
@@ -78,8 +71,7 @@ main {
 main h1 {
     color: #8b4513; /* Rich dark brown */
     font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 main p {
@@ -88,45 +80,10 @@ main p {
     margin-right: 10%;
     text-align: left;
     font-size: 1.1em;
-    line-height: 1.6;
 }
-
-main image{
-    border-radius: 50%; 
-    border-color: #4b382a;
-}
-
-/* Team Members Section */
-.team-member {
-    display: flex;
-    margin: 20px 0;
-    border: 1px solid #c2a779;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.round-photo {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s ease; 
-}
-
-.round-photo:hover {
-    transform: scale(1.2); /* Zoom in on hover */
-}
-
-.team-details h3 {
-    margin: 5px 0;
-    text-decoration: wavy;
-    color: #4b382a;
-}
-
-.team-details p {
-    margin: 5px 0;
+li::before {
+    content: "☕"; /* Coffee cup icon before list items */
+    color: #8b4513;
 }
 
 /* Footer Section */
@@ -155,3 +112,84 @@ footer p {
     margin: 5px 0;
 }
 
+/* Images */
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Additional Customizations */
+h2 {
+    color: #c2a779; /* Accent color for subheadings */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+li::before {
+    color: #8b4513;
+}
+
+/*Table for training*/
+/* Table Styling */
+.training-schedule {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.training-schedule caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:#8b4513;
+}
+
+.training-schedule th, .training-schedule td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #777;
+}
+
+.training-schedule th {
+    background-color: #c2a779;
+    color: white;
+    font-size: 18px;
+}
+
+.training-schedule td {
+    font-size: 16px;
+}
+
+/* Apply alternating row colors using CSS class */
+.tr-even {
+    background-color: #c2a779;
+}
+
+.tr-odd {
+    background-color: #4b382a;
+}
+
+/* Hover effect to highlight rows */
+.training-schedule tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 50px;
+}

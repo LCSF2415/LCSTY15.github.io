@@ -25,13 +25,6 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header img{
-    display: "";
-    max-width: 50%;
-    height: auto;
-    border-radius: 5px;
-}
-
 /* Navigation Bar */
 nav {
     background-color: #c2a779; /* Light golden brown */
@@ -78,55 +71,20 @@ main {
 main h1 {
     color: #8b4513; /* Rich dark brown */
     font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 main p {
     margin: 10px 0;
-    margin-left: 10%;
+    margin-left: 23%;
     margin-right: 10%;
     text-align: left;
     font-size: 1.1em;
-    line-height: 1.6;
+    color: #8b4513;
 }
-
-main image{
-    border-radius: 50%; 
-    border-color: #4b382a;
-}
-
-/* Team Members Section */
-.team-member {
-    display: flex;
-    margin: 20px 0;
-    border: 1px solid #c2a779;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.round-photo {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s ease; 
-}
-
-.round-photo:hover {
-    transform: scale(1.2); /* Zoom in on hover */
-}
-
-.team-details h3 {
-    margin: 5px 0;
-    text-decoration: wavy;
-    color: #4b382a;
-}
-
-.team-details p {
-    margin: 5px 0;
+li::before {
+    content: "☕"; /* Coffee cup icon before list items */
+    color: #8b4513;
 }
 
 /* Footer Section */
@@ -155,3 +113,39 @@ footer p {
     margin: 5px 0;
 }
 
+/* Images */
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Additional Customizations */
+h2 {
+    color: #c2a779; /* Accent color for subheadings */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+li::before {
+    content: "☕"; /* Coffee cup icon before list items */
+    color: #8b4513;
+}
+/*video and audio*/
+
+video{
+    margin: 0 auto 4%;
+    max-width: 100%;
+    display: block;
+}
